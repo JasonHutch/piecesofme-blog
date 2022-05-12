@@ -1,0 +1,63 @@
+@import '../../styles//Base.scss';
+
+.Navbar {
+    display: flex;
+    width: '100%';
+    //margin: 20px 20px;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    z-index: 1;
+    padding: 10px 30px;
+
+    &__sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        //margin: 20px 20px;
+        // left: 20px;
+        // right: 20px;
+        // top: 20px;
+        // bottom: 20px;
+    }
+
+
+    &__titleWrap {
+        color: rgba($primaryFontColor-darkTheme,.5)
+    }
+
+    &__menuItems {
+        display: flex;
+        width: 15%;
+        list-style: none;
+        justify-content: space-evenly;
+
+        li {
+            color: rgba($primaryFontColor-darkTheme,.5);
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+                text-decoration-color: rgba($primaryFontColor-darkTheme,.5);
+                text-underline-offset: 10px;
+            }
+        }
+    }
+
+    &__connectBtn {
+        border: 1px solid rgba($primaryFontColor-darkTheme,.5);
+        border-radius: 10px;
+        padding: 10px;
+        &:hover {
+            background-color: rgba($primaryFontColor-darkTheme,.5);
+            span {
+                color: $color-black;
+                border: none;
+            }
+        }
+
+        span {
+            font-size: small;
+            color: rgba($primaryFontColor-darkTheme,.5);
+        }
+    }
+}

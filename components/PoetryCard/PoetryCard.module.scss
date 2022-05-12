@@ -1,0 +1,38 @@
+@import '../../styles/Base.scss';
+
+.PoetryCard {
+    position: relative;
+    width: 160px;
+    height: 276px;
+    border-radius: 20px;
+    background-color: aqua;
+
+    &__expanded {
+        position: fixed;
+        top:0px;
+        left:0px;
+        width: 100vw;
+        height:100vh;
+        z-index: 1;
+        display: grid;
+        place-items: center;
+    }
+
+    &__img {
+        cursor: pointer;
+        transition: all .5s ease;
+        transform-origin: center;
+        -webkit-backface-visibility: hidden;
+        &:hover {
+            transform: scale(1.2);
+
+        }
+    }
+}
+.PoetryCardLong {
+    position: relative;
+    width: 160px;
+    height: 315px;
+    border-radius: 20px;
+    background-color: aqua;
+}
